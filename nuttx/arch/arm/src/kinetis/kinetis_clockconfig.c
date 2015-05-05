@@ -362,6 +362,12 @@ kinesis_setdividers(uint32_t div1, uint32_t div2, uint32_t div3, uint32_t div4)
 
   /* Set clock dividers to desired value */
 
+  /* XXX: WARNING!
+   *
+   * For some reason, if the optimization level is not set for size
+   * (-Os) on GCC 4.8.4, the below register assignment will cause this
+   * function to never return.
+   */
   putreg32(SIM_CLKDIV1_OUTDIV1(div1) | SIM_CLKDIV1_OUTDIV2(div2) |
            SIM_CLKDIV1_OUTDIV3(div3) | SIM_CLKDIV1_OUTDIV4(div4),
            KINETIS_SIM_CLKDIV1);

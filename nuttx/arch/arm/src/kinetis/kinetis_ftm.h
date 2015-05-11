@@ -479,7 +479,7 @@
                                                /* Bits 4-31: Reserved */
 /* FTM Software Output Control */
 
-#define FTM_SWOCTRL_CH7OC(n)         (1 << (n)) /* Bits 0-7: Channel (n) Software Output Control Enable */
+#define FTM_SWOCTRL_CHOC(n)         (1 << (n)) /* Bits 0-7: Channel (n) Software Output Control Enable */
 #define FTM_SWOCTRL_CH0OC            (1 << 0)  /* Bit 0:  Channel 0 Software Output Control Enable */
 #define FTM_SWOCTRL_CH1OC            (1 << 1)  /* Bit 1:  Channel 1 Software Output Control Enable */
 #define FTM_SWOCTRL_CH2OC            (1 << 2)  /* Bit 2:  Channel 2 Software Output Control Enable */
@@ -500,7 +500,7 @@
                                                /* Bits 16-31: Reserved */
 /* FTM PWM Load */
 
-#define FTM_PWMLOAD_CH7SEL(n)        (1 << (n)) /* Bits 0-7: Channel (n) Select */
+#define FTM_PWMLOAD_CHSEL(n)        (1 << (n)) /* Bits 0-7: Channel (n) Select */
 #define FTM_PWMLOAD_CH0SEL           (1 << 0)  /* Bit 0:  Channel 0 Select */
 #define FTM_PWMLOAD_CH1SEL           (1 << 1)  /* Bit 1:  Channel 1 Select */
 #define FTM_PWMLOAD_CH2SEL           (1 << 2)  /* Bit 2:  Channel 2 Select */

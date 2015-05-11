@@ -54,8 +54,8 @@
 #define KINETIS_FTM_CNT_OFFSET      0x0004 /* Counter */
 #define KINETIS_FTM_MOD_OFFSET      0x0008 /* Modulo */
 
-#define KINETIS_FTM_CSC_OFFSET(n)   (0x000c+((n)<<3) /* Channel (n) Status and Control */
-#define KINETIS_FTM_CV_OFFSET(n)    (0x0010+((n)<<3) /* Channel (n) Value */
+#define KINETIS_FTM_CSC_OFFSET(n)   (0x000c+((n)<<3)) /* Channel (n) Status and Control */
+#define KINETIS_FTM_CV_OFFSET(n)    (0x0010+((n)<<3)) /* Channel (n) Value */
 #define KINETIS_FTM_C0SC_OFFSET     0x000c /* Channel 0 Status and Control */
 #define KINETIS_FTM_C0V_OFFSET      0x0010 /* Channel 0 Value */
 #define KINETIS_FTM_C1SC_OFFSET     0x0014 /* Channel 1 Status and Control */
